@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="一、为什么要用python虚拟环境在实际项目开发中，我们通常会根据自己的需求去下载各种相应的框架库，如Scrapy、Beautiful Soup等，但是可能每个项目使用的框架库并不一样，或使用框架的版本不一样，或者使用的python版本不同，这样需要我们根据需求不断的更新或卸载相应的库。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-07T08:10:35.183Z">
+<meta property="og:updated_time" content="2019-02-07T08:20:53.716Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python虚拟环境">
 <meta name="twitter:description" content="一、为什么要用python虚拟环境在实际项目开发中，我们通常会根据自己的需求去下载各种相应的框架库，如Scrapy、Beautiful Soup等，但是可能每个项目使用的框架库并不一样，或使用框架的版本不一样，或者使用的python版本不同，这样需要我们根据需求不断的更新或卸载相应的库。">
@@ -339,7 +339,7 @@
                 
               
 
-              <time title="创建时间：2019-02-07 13:20:16 / 修改时间：16:10:35" itemprop="dateCreated datePublished" datetime="2019-02-07T13:20:16+08:00">2019-02-07</time>
+              <time title="创建时间：2019-02-07 13:20:16 / 修改时间：16:20:53" itemprop="dateCreated datePublished" datetime="2019-02-07T13:20:16+08:00">2019-02-07</time>
             
 
             
@@ -382,7 +382,7 @@
 <h4 id="二、虚拟环境的安装"><a href="#二、虚拟环境的安装" class="headerlink" title="二、虚拟环境的安装"></a>二、虚拟环境的安装</h4><ol>
 <li>提前安装好python环境，并把路径加入到环境变量;</li>
 <li>安装virtualenv<br><code>pip install virtualenv</code>   </li>
-<li>创建虚拟环境<br><code>virtualenv 虚拟环境名</code>这个命令创建虚拟环境，会在当前目录创建</li>
+<li>创建虚拟环境<br><code>virtualenv venv</code>这个命令创建虚拟环境，会在当前目录创建<br>也可以选择python解释器的版本<code>virtualenv 解释器在电脑上的地址  虚拟环境名</code></li>
 <li>先要进入到虚拟环境目录的Scripts中，然后在激活虚拟环境<code>activate.bat</code>,则进入到新建的虚拟环境中，之后就可以通过pip命令安装各种依赖包。</li>
 <li>退出虚拟环境<code>deactivate.bat</code>.</li>
 </ol>
@@ -390,14 +390,15 @@
 <h4 id="三、虚拟环境的配置"><a href="#三、虚拟环境的配置" class="headerlink" title="三、虚拟环境的配置"></a>三、虚拟环境的配置</h4><ol>
 <li>安装 virtualenvwrapper-win<br><code>pip install virtualenvwrapper-win</code>可以使用国内镜像下载<code>pip install -i 网址 virtualenvwrapper-win</code></li>
 <li>使用<code>workon</code>查看是否安装成功</li>
-<li>通过新方法创建虚拟环境<code>mkvirtualenv 虚拟环境名</code></li>
+<li>通过新方法创建虚拟环境<code>mkvirtualenv venv(虚拟环境名)</code><br>若想指定python版本，可通过”–python”指定python解释器mkvirtualenv –python=/usr/local/python3.5.3/bin/python venv</li>
 <li>为虚拟环境配置一个专门的目录     <ul>
 <li>新建一个要存放的文件夹</li>
 <li>配置电脑系统环境变量<br>变量名：WORKON_HOME<br>变量值：目录地址<br>再次运行WORKON，发现目录下没有文件夹，可以把之前的虚拟环境复制过来</li>
 </ul>
 </li>
-<li>进入某个虚拟空间<br> workon 虚拟环境名</li>
+<li>进入某个虚拟空间<br> workon venv</li>
 <li>退出虚拟空间<code>deactivate</code></li>
+<li>删除虚拟环境<code>rmvirtualenv venv</code></li>
 </ol>
 <hr>
 <p>参考博客:<a href="https://blog.csdn.net/godot06/article/details/81079064" target="_blank" rel="noopener">https://blog.csdn.net/godot06/article/details/81079064</a></p>
@@ -532,7 +533,7 @@
                 
                 
                 <div class="site-state-item site-state-tags">
-                  
+                  <a href="/tags/index.html">
                     
                     
                       
@@ -547,7 +548,7 @@
                     
                     <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">标签</span>
-                  
+                  </a>
                 </div>
               
             </nav>
